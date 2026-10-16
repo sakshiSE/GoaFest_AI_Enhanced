@@ -1,0 +1,7 @@
+name,area,category,description,estimated_fee_inr,source_url,evidence_status
+Fontainhas,Panaji,heritage,Latin Quarter known for colourful Portuguese-era houses and walkable lanes.,0,https://goa-tourism.com/,estimated / demo dataset
+Miramar Beach,Panaji,beach,Accessible urban beach suitable for a relaxed coastal walk.,0,https://goa-tourism.com/,estimated / demo dataset
+Basilica of Bom Jesus,Old Goa,heritage,Historic church complex; verify visiting hours and any restrictions.,0,https://asi.nic.in/,unverified hours
+Dona Paula viewpoint,Dona Paula,viewpoint,Coastal viewpoint; verify access and local conditions.,0,https://goa-tourism.com/,estimated / demo dataset
+Candolim Beach,North Goa,beach,Popular North Goa beach; travel time depends on starting point.,0,https://goa-tourism.com/,estimated / demo dataset
+Reis Magos Fort,Verem,heritage,Heritage fort overlooking the Mandovi river; verify opening hours and ticket fee.,100,https://reis-magos-fort.com/,estimated fee

@@ -1,0 +1,5 @@
+dish,type,area,description,estimated_price_inr,source_url,evidence_status
+Goan fish curry rice,Goan food,Panaji,A classic local meal; confirm dietary needs and restaurant availability.,250,https://goa-tourism.com/,estimated / demo dataset
+Vegetarian xacuti or seasonal thali,Goan food vegetarian,Panaji,Ask the restaurant about ingredients and preparation.,220,https://goa-tourism.com/,estimated / demo dataset
+Poi with local snacks,Goan food,Mapusa,Local bread and snack pairing; availability varies by shop.,120,https://goa-tourism.com/,estimated / demo dataset
+Bebinca,dessert Goan food,Panaji,Traditional layered Goan dessert.,100,https://goa-tourism.com/,estimated / demo dataset

@@ -1,0 +1,16 @@
+{
+  "festival": "Goa Carnival",
+  "start_date": "2027-02-10",
+  "days": 3,
+  "travellers": 2,
+  "budget_inr": 12000,
+  "interests": [
+    "beaches",
+    "heritage"
+  ],
+  "food_preferences": [
+    "Goan food"
+  ],
+  "travel_style": "balanced",
+  "accommodation": "budget hotel"
+}

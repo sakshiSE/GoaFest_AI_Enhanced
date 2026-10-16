@@ -1,0 +1,4 @@
+mode,unit,estimated_cost_inr,evidence_status,notes
+Local taxi,per group/day,700,estimated,Planning assumption only; not a quote
+Bus,per person/day,100,estimated,Routes and schedules must be checked
+Rental scooter,per day,500,estimated,"Excludes fuel, deposit and licence requirements"
