@@ -2,6 +2,50 @@ name,area,category,description,estimated_fee_inr,source_url,evidence_status
 Fontainhas,Panaji,heritage,Latin Quarter known for colourful Portuguese-era houses and walkable lanes.,0,https://goa-tourism.com/,estimated / demo dataset
 Miramar Beach,Panaji,beach,Accessible urban beach suitable for a relaxed coastal walk.,0,https://goa-tourism.com/,estimated / demo dataset
 Basilica of Bom Jesus,Old Goa,heritage,Historic church complex; verify visiting hours and any restrictions.,0,https://asi.nic.in/,unverified hours
-Dona Paula viewpoint,Dona Paula,viewpoint,Coastal viewpoint; verify access and local conditions.,0,https://goa-tourism.com/,estimated / demo dataset
-Candolim Beach,North Goa,beach,Popular North Goa beach; travel time depends on starting point.,0,https://goa-tourism.com/,estimated / demo dataset
-Reis Magos Fort,Verem,heritage,Heritage fort overlooking the Mandovi river; verify opening hours and ticket fee.,100,https://reis-magos-fort.com/,estimated fee
+Dona Paula viewpoint,Dona Paula,viewpoint,Coastal viewpoint with views around the Mandovi and Zuari estuaries; verify access.,0,https://goa-tourism.com/,estimated / demo dataset
+Candolim Beach,Candolim,beach,Popular North Goa beach; travel time depends on starting point.,0,https://goa-tourism.com/,estimated / demo dataset
+Reis Magos Fort,Verem,heritage,Heritage fort overlooking the Mandovi River; verify opening hours and ticket fee.,100,https://reis-magos-fort.com/,estimated fee
+Fort Aguada,Sinquerim,heritage,Historic coastal fort with views of the Arabian Sea; check access restrictions.,0,https://goa-tourism.com/,unverified fee
+Chapora Fort,Chapora,heritage,Hilltop fort ruins overlooking the coast and Chapora River; check access conditions.,0,https://goa-tourism.com/,estimated / demo dataset
+Corjuem Fort,Aldona,heritage,Small inland fort offering views of the surrounding countryside; verify access.,0,https://goa-tourism.com/,estimated / demo dataset
+Cabo de Rama Fort,Canacona,heritage,Historic fort ruins on a scenic coastal headland in South Goa.,0,https://goa-tourism.com/,estimated / demo dataset
+Fort Tiracol,Tiracol,heritage,Historic fort at Goa's northern coastal edge; confirm public access before visiting.,0,https://goa-tourism.com/,unverified access
+Se Cathedral,Old Goa,heritage,Major historic cathedral in the Old Goa heritage complex; verify visiting arrangements.,0,https://asi.nic.in/,unverified hours
+Church of St Francis of Assisi,Old Goa,heritage,Historic church near the Basilica of Bom Jesus; check opening hours.,0,https://asi.nic.in/,unverified hours
+Church of Our Lady of the Rosary,Old Goa,heritage,Historic church on the Old Goa hillside with architectural significance.,0,https://goa-tourism.com/,estimated / demo dataset
+Church of St Cajetan,Old Goa,heritage,Historic church noted for its distinctive architecture; verify visiting hours.,0,https://goa-tourism.com/,unverified hours
+Shri Manguesh Temple,Mangeshi,religious,Prominent Goan temple dedicated to Lord Shiva; follow visitor and dress guidelines.,0,https://goa-tourism.com/,estimated / demo dataset
+Shantadurga Temple,Kavlem,religious,Important Goan temple dedicated to Goddess Shantadurga; check local visitor guidance.,0,https://goa-tourism.com/,estimated / demo dataset
+Shri Mahalasa Narayani Temple,Mardol,religious,Temple known for its traditional architecture and religious importance.,0,https://goa-tourism.com/,estimated / demo dataset
+Mahadev Temple Tambdi Surla,Tambdi Surla,heritage,Medieval stone temple set amid the Western Ghats landscape.,0,https://goa-tourism.com/,estimated / demo dataset
+Safa Shahouri Masjid,Ponda,religious,Historic mosque associated with Goa's cultural and architectural heritage.,0,https://goa-tourism.com/,estimated / demo dataset
+Anjuna Beach,Anjuna,beach,Coastal beach known for rocky scenery and nearby market activity.,0,https://goa-tourism.com/,estimated / demo dataset
+Baga Beach,Baga,beach,Lively North Goa beach with restaurants and seasonal water activities.,0,https://goa-tourism.com/,estimated / demo dataset
+Calangute Beach,Calangute,beach,Popular sandy beach with nearby shops and visitor facilities.,0,https://goa-tourism.com/,estimated / demo dataset
+Vagator Beach,Vagator,beach,Scenic beach beneath laterite cliffs near Chapora Fort.,0,https://goa-tourism.com/,estimated / demo dataset
+Arambol Beach,Arambol,beach,Northern Goa beach known for its relaxed atmosphere and coastal walks.,0,https://goa-tourism.com/,estimated / demo dataset
+Ashwem Beach,Mandrem,beach,Coastal stretch known for sand and a comparatively relaxed setting.,0,https://goa-tourism.com/,estimated / demo dataset
+Morjim Beach,Morjim,beach,Beach associated with seasonal turtle nesting; follow conservation signs and restrictions.,0,https://goa-tourism.com/,seasonal restrictions possible
+Palolem Beach,Canacona,beach,Sheltered crescent-shaped beach in South Goa popular for coastal scenery.,0,https://goa-tourism.com/,estimated / demo dataset
+Agonda Beach,Canacona,beach,Long scenic beach suited to a quiet coastal visit; check local safety advice.,0,https://goa-tourism.com/,estimated / demo dataset
+Colva Beach,Colva,beach,Well-known South Goa beach with nearby food and visitor facilities.,0,https://goa-tourism.com/,estimated / demo dataset
+Benaulim Beach,Benaulim,beach,South Goa beach offering a quieter alternative to some busier coastal areas.,0,https://goa-tourism.com/,estimated / demo dataset
+Butterfly Beach,Canacona,beach,Small scenic beach that may require a boat trip or challenging access; check conditions.,0,https://goa-tourism.com/,access unverified
+Dudhsagar Falls,Mollem,nature,Large waterfall in the Western Ghats; access and permitted routes vary by season.,500,https://goa-tourism.com/,estimated fee
+Arvalem Waterfall,Sanquelim,nature,Waterfall in North Goa with a scenic setting; water levels vary seasonally.,0,https://goa-tourism.com/,estimated / demo dataset
+Mayem Lake,Mayem,nature,Inland lake surrounded by greenery and rural scenery; verify available activities.,0,https://goa-tourism.com/,estimated / demo dataset
+Dr Salim Ali Bird Sanctuary,Chorao Island,wildlife,Mangrove habitat suited to birdwatching; check ferry timings and entry requirements.,100,https://goa-tourism.com/,estimated fee
+Bondla Wildlife Sanctuary,Bondla,wildlife,Small wildlife sanctuary with nature-oriented visitor facilities; verify current access.,100,https://goa-tourism.com/,estimated fee
+Bhagwan Mahavir Wildlife Sanctuary,Mollem,wildlife,Protected Western Ghats forest with rich biodiversity; check permits and visitor rules.,100,https://goa-tourism.com/,estimated fee
+Cotigao Wildlife Sanctuary,Canacona,wildlife,Forest sanctuary with nature trails and opportunities to observe wildlife.,100,https://goa-tourism.com/,estimated fee
+Netravali Wildlife Sanctuary,Netravali,wildlife,Forest landscape in South Goa with biodiversity and nature-based experiences.,100,https://goa-tourism.com/,estimated fee
+Mollem National Park,Mollem,nature,Protected forest area in the Western Ghats; access depends on current regulations.,100,https://goa-tourism.com/,estimated fee
+Goa State Museum,Panaji,museum,Museum with exhibits relating to Goa's history and cultural heritage.,50,https://goa-tourism.com/,estimated fee
+Naval Aviation Museum,Bogmalo,museum,Museum showcasing aircraft and the history of Indian naval aviation.,100,https://goa-tourism.com/,estimated fee
+Goa Chitra Museum,Benaulim,museum,Ethnographic museum displaying traditional Goan rural life and objects.,300,https://goa-tourism.com/,estimated fee
+Museum of Goa,Pilerne,museum,Contemporary art museum featuring work connected with Goa and its culture.,300,https://goa-tourism.com/,estimated fee
+Houses of Goa Museum,Torda,museum,Museum exploring Goan house design and architectural influences; confirm access.,100,https://goa-tourism.com/,estimated fee
+Goa Science Centre,Miramar,education,Science exhibits and educational experiences for visitors; verify ticket prices.,100,https://goa-tourism.com/,estimated fee
+Mapusa Municipal Market,Mapusa,market,Local market for produce spices household goods and regional shopping.,0,https://goa-tourism.com/,estimated / demo dataset
+Anjuna Flea Market,Anjuna,market,Seasonal market known for clothing crafts and souvenirs; operating days can vary.,0,https://goa-tourism.com/,seasonal schedule unverified
+Old Goa Archaeological Museum,Old Goa,museum,Museum featuring archaeological and historical collections; check opening hours.,50,https://asi.nic.in/,unverified fee
