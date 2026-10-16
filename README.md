@@ -193,3 +193,8 @@ Verify deployment by opening `/health`, `/docs`, `/catalog` and `/mcp/tools` on 
 - No live route optimisation or traffic-time calculation is implemented. Google Maps links only open a search.
 - The schedule validator catches obvious overlaps and budget overruns; it does not perform reliable automatic replanning around official event schedules.
 - LangGraph checkpoints are in-memory only. The project does not use a database, authentication or durable user memory.
+
+
+### Explore Goa listings and deployment note
+
+The Explore Goa directory reads `frontend/static/data/catalog.json`, generated from the project CSV files. This lets the directory work independently of the Render API. If you edit any CSV in `backend/data/`, regenerate `frontend/static/data/catalog.json` before redeploying the frontend. The trip-planning form still calls the FastAPI backend through `VITE_API_BASE_URL`.

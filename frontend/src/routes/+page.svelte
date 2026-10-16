@@ -17,13 +17,24 @@
   function toggle(list, value, setter) { setter(list.includes(value) ? list.filter(x=>x!==value) : [...list,value]); }
   onMount(loadCatalog);
   async function loadCatalog() {
+    // Tourist directory data is bundled with the frontend, so Explore Goa
+    // still works when the separate API is sleeping or temporarily unavailable.
     catalogLoading = true; catalogError = '';
     try {
-      const response = await fetch(`${API_BASE}/catalog`);
-      if (!response.ok) throw new Error('Tourist listings could not be loaded');
-      catalog = await response.json();
+      const response = await fetch('/data/catalog.json');
+      if (!response.ok) throw new Error(`Could not load bundled listings (${response.status})`);
+      const data = await response.json();
+      catalog = {
+        places: Array.isArray(data.places) ? data.places : [],
+        food: Array.isArray(data.food) ? data.food : [],
+        restaurants: Array.isArray(data.restaurants) ? data.restaurants : [],
+        events: Array.isArray(data.events) ? data.events : [],
+        activities: Array.isArray(data.activities) ? data.activities : [],
+        transport: Array.isArray(data.transport) ? data.transport : []
+      };
     } catch (e) {
-      catalogError = 'Could not connect to the listings API. Start the backend to browse your CSV data.';
+      console.error('GoaFest AI listings could not be loaded:', e);
+      catalogError = 'The bundled Goa listings could not be loaded. Refresh the page and try again.';
     } finally { catalogLoading = false; }
   }
   const categoryLabels = { beaches: 'Beaches', places: 'Tourist places', heritage: 'Heritage sites', activities: 'Activities', food: 'Local food', restaurants: 'Restaurants', events: 'Festivals & events', transport: 'Transport' };
@@ -85,7 +96,7 @@
       <button type="button" role="tab" aria-selected={activeCategory === pair[0]} class:active={activeCategory === pair[0]} onclick={() => { activeCategory = pair[0]; catalogSearch = ''; }}>{pair[1]}</button>
     {/each}
   </div>
-  {#if catalogLoading}<p class="catalog-message">Loading listings from your GoaFest AI CSV data…</p>
+  {#if catalogLoading}<p class="catalog-message">Loading Goa listings…</p>
   {:else if catalogError}<div class="catalog-message"><p>{catalogError}</p><button class="outline" type="button" onclick={loadCatalog}>Try again</button></div>
   {:else if filteredCatalog().length === 0}<p class="catalog-message">No matching listings found. Try another search or category.</p>
   {:else}<div class="catalog-grid">

@@ -1,0 +1,202 @@
+{
+  "places": [
+    {
+      "name": "Fontainhas",
+      "area": "Panaji",
+      "category": "heritage",
+      "description": "Latin Quarter known for colourful Portuguese-era houses and walkable lanes.",
+      "estimated_fee_inr": "0",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    },
+    {
+      "name": "Miramar Beach",
+      "area": "Panaji",
+      "category": "beach",
+      "description": "Accessible urban beach suitable for a relaxed coastal walk.",
+      "estimated_fee_inr": "0",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    },
+    {
+      "name": "Basilica of Bom Jesus",
+      "area": "Old Goa",
+      "category": "heritage",
+      "description": "Historic church complex; verify visiting hours and any restrictions.",
+      "estimated_fee_inr": "0",
+      "source_url": "https://asi.nic.in/",
+      "evidence_status": "unverified hours"
+    },
+    {
+      "name": "Dona Paula viewpoint",
+      "area": "Dona Paula",
+      "category": "viewpoint",
+      "description": "Coastal viewpoint; verify access and local conditions.",
+      "estimated_fee_inr": "0",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    },
+    {
+      "name": "Candolim Beach",
+      "area": "North Goa",
+      "category": "beach",
+      "description": "Popular North Goa beach; travel time depends on starting point.",
+      "estimated_fee_inr": "0",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    },
+    {
+      "name": "Reis Magos Fort",
+      "area": "Verem",
+      "category": "heritage",
+      "description": "Heritage fort overlooking the Mandovi river; verify opening hours and ticket fee.",
+      "estimated_fee_inr": "100",
+      "source_url": "https://reis-magos-fort.com/",
+      "evidence_status": "estimated fee"
+    }
+  ],
+  "food": [
+    {
+      "dish": "Goan fish curry rice",
+      "type": "Goan food",
+      "area": "Panaji",
+      "description": "A classic local meal; confirm dietary needs and restaurant availability.",
+      "estimated_price_inr": "250",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    },
+    {
+      "dish": "Vegetarian xacuti or seasonal thali",
+      "type": "Goan food vegetarian",
+      "area": "Panaji",
+      "description": "Ask the restaurant about ingredients and preparation.",
+      "estimated_price_inr": "220",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    },
+    {
+      "dish": "Poi with local snacks",
+      "type": "Goan food",
+      "area": "Mapusa",
+      "description": "Local bread and snack pairing; availability varies by shop.",
+      "estimated_price_inr": "120",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    },
+    {
+      "dish": "Bebinca",
+      "type": "dessert Goan food",
+      "area": "Panaji",
+      "description": "Traditional layered Goan dessert.",
+      "estimated_price_inr": "100",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "estimated / demo dataset"
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "The Foody Goans",
+      "area": "Panaji",
+      "category": "Goan cuisine",
+      "description": "Family restaurant describing authentic Goan cooking, with vegetarian and non-vegetarian options. Check the current menu and hours on its official site.",
+      "source_url": "https://thefoodygoans.com/",
+      "evidence_status": "official website; details can change"
+    },
+    {
+      "name": "Viva Panjim",
+      "area": "Fontainhas; Panaji",
+      "category": "Goan cuisine",
+      "description": "Family restaurant in a heritage home with Goan and seafood specialities. Check current hours and menu before visiting.",
+      "source_url": "https://www.vivapanjim.com/",
+      "evidence_status": "official website; details can change"
+    },
+    {
+      "name": "Susegado",
+      "area": "Mobor Beach; Cavelossim",
+      "category": "Seafood; beachfront",
+      "description": "Beachfront seafood grill and bar at The St. Regis Goa Resort. Seasonal operation and menu/hours should be checked on the official site.",
+      "source_url": "https://www.susegadogoa.com/",
+      "evidence_status": "official website; seasonal details can change"
+    },
+    {
+      "name": "Uma by the Sea",
+      "area": "Morjim Beach",
+      "category": "Beachfront; Goan and global cuisine",
+      "description": "Seaside restaurant describing Goan and international dishes. Confirm current services, hours and availability with the official site.",
+      "source_url": "https://www.umabythesea.com/",
+      "evidence_status": "official website; details can change"
+    }
+  ],
+  "events": [
+    {
+      "festival": "Goa Carnival",
+      "event": "Carnival parade (sample record)",
+      "venue": "Panaji - verify venue",
+      "schedule": "Unverified - check official schedule",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "unverified",
+      "notes": "Static demonstration record; not a current event listing"
+    },
+    {
+      "festival": "Sunburn Goa",
+      "event": "Electronic music festival (sample record)",
+      "venue": "Venue varies by edition",
+      "schedule": "Unverified - check organiser",
+      "source_url": "https://sunburn.in/",
+      "evidence_status": "unverified",
+      "notes": "Static demonstration record; dates vary annually"
+    },
+    {
+      "festival": "Shigmo Festival",
+      "event": "Traditional spring festival (sample record)",
+      "venue": "Multiple locations",
+      "schedule": "Unverified - check local notices",
+      "source_url": "https://goa-tourism.com/",
+      "evidence_status": "unverified",
+      "notes": "Static demonstration record; not a current schedule"
+    }
+  ],
+  "activities": [
+    {
+      "activity": "Heritage walk",
+      "category": "culture",
+      "duration_hours": "1.5",
+      "evidence_status": "demo"
+    },
+    {
+      "activity": "Beach sunset break",
+      "category": "outdoors",
+      "duration_hours": "1.0",
+      "evidence_status": "demo"
+    },
+    {
+      "activity": "Local market visit",
+      "category": "shopping",
+      "duration_hours": "1.0",
+      "evidence_status": "demo"
+    }
+  ],
+  "transport": [
+    {
+      "mode": "Local taxi",
+      "unit": "per group/day",
+      "estimated_cost_inr": "700",
+      "evidence_status": "estimated",
+      "notes": "Planning assumption only; not a quote"
+    },
+    {
+      "mode": "Bus",
+      "unit": "per person/day",
+      "estimated_cost_inr": "100",
+      "evidence_status": "estimated",
+      "notes": "Routes and schedules must be checked"
+    },
+    {
+      "mode": "Rental scooter",
+      "unit": "per day",
+      "estimated_cost_inr": "500",
+      "evidence_status": "estimated",
+      "notes": "Excludes fuel, deposit and licence requirements"
+    }
+  ]
+}
