@@ -14,8 +14,9 @@ def create_planning_graph():
         search_festival_information,
         search_attractions,
         search_food_options,
+        calculate_trip_budget,
+        validate_itinerary,
     )
-
     def retrieve_node(state: TripState):
         request = state["request"]
 
@@ -100,8 +101,26 @@ def create_planning_graph():
 
     def validate_node(state: TripState):
         result = state["draft"]
+        request = state["request"]
+
+        # Estimate the trip budget using the generated itinerary.
+        budget = calculate_trip_budget(
+            request,
+            result.get("itinerary", {}),
+        )
+
+        # Validate the itinerary against the estimated budget.
+        validation = validate_itinerary(
+            result.get("itinerary", {}),
+            budget,
+        )
+
+        # Attach the results to the itinerary response.
+        result["estimated_cost"] = budget
+        result["validation"] = validation
         result["workflow"]["completed"] = True
-        return {"final": result}
+
+    return {"final": result}
 
     graph = StateGraph(TripState)
 
