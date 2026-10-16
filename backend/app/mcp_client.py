@@ -5,6 +5,7 @@ import asyncio
 import json
 import os
 import sys
+import time
 from pathlib import Path
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
@@ -28,37 +29,60 @@ async def _with_session(operation):
 
 
 async def _call_tools_async(calls: list[tuple[str, dict]]) -> dict:
-    """Call MCP tools sequentially and record successful calls."""
+    """Call MCP tools sequentially and record timing and errors."""
 
     async def operation(session):
         output = {}
-        tools_used = []
+        trace = []
 
         for name, arguments in calls:
-            result = await session.call_tool(name, arguments)
+            started = time.perf_counter()
+            error = None
 
-            if getattr(result, "isError", False):
-                raise RuntimeError(f"MCP tool {name} returned an error")
+            try:
+                result = await session.call_tool(name, arguments)
 
-            parsed = None
+                if getattr(result, "isError", False):
+                    error = "MCP tool returned an error"
+                    raise RuntimeError(error)
 
-            for content in getattr(result, "content", []):
-                if getattr(content, "type", None) == "text":
-                    try:
-                        parsed = json.loads(content.text)
-                    except (TypeError, json.JSONDecodeError):
-                        parsed = content.text
-                    break
+                parsed = None
 
-            if parsed is None:
-                parsed = getattr(result, "structuredContent", None)
+                for content in getattr(result, "content", []):
+                    if getattr(content, "type", None) == "text":
+                        try:
+                            parsed = json.loads(content.text)
+                        except (TypeError, json.JSONDecodeError):
+                            parsed = content.text
+                        break
 
-            output[name] = parsed
-            tools_used.append(name)
+                if parsed is None:
+                    parsed = getattr(result, "structuredContent", None)
+
+                output[name] = parsed
+
+            except Exception as exc:
+                if error is None:
+                    error = f"{type(exc).__name__}: {exc}"
+                raise
+
+            finally:
+                trace.append({
+                    "tool": name,
+                    "execution_ms": round(
+                        (time.perf_counter() - started) * 1000, 2
+                    ),
+                    "error": error,
+                })
 
         return {
             "results": output,
-            "tools_used": tools_used,
+            "tool_calls": trace,
+            "tools_used": [
+                item["tool"]
+                for item in trace
+                if item["error"] is None
+            ],
         }
 
     return await _with_session(operation)
@@ -69,7 +93,7 @@ def call_tourism_tools(
     interests: list[str],
     food_preferences: list[str],
 ) -> dict:
-    """Invoke the registered tourism tools through the MCP protocol."""
+    """Invoke registered tourism tools through the MCP protocol."""
 
     return asyncio.run(
         _call_tools_async([
@@ -108,23 +132,36 @@ async def call_single_mcp_tool(name: str, arguments: dict) -> dict:
         if name not in names:
             raise ValueError(f"Unknown MCP tool: {name}")
 
-        result = await session.call_tool(name, arguments)
+        started = time.perf_counter()
+        error = None
 
-        content = []
-        for item in getattr(result, "content", []):
-            if getattr(item, "type", None) == "text":
-                try:
-                    content.append(json.loads(item.text))
-                except (TypeError, json.JSONDecodeError):
-                    content.append(item.text)
+        try:
+            result = await session.call_tool(name, arguments)
 
-        return {
-            "tool": name,
-            "is_error": bool(getattr(result, "isError", False)),
-            "result": (
-                content[0] if len(content) == 1
-                else content
-            ),
-        }
+            if getattr(result, "isError", False):
+                error = "MCP tool returned an error"
+                raise RuntimeError(error)
+
+            content = []
+            for item in getattr(result, "content", []):
+                if getattr(item, "type", None) == "text":
+                    try:
+                        content.append(json.loads(item.text))
+                    except (TypeError, json.JSONDecodeError):
+                        content.append(item.text)
+
+            return {
+                "tool": name,
+                "is_error": False,
+                "execution_ms": round(
+                    (time.perf_counter() - started) * 1000, 2
+                ),
+                "result": content[0] if len(content) == 1 else content,
+            }
+
+        except Exception as exc:
+            if error is None:
+                error = f"{type(exc).__name__}: {exc}"
+            raise
 
     return await _with_session(operation)

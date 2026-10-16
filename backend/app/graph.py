@@ -38,15 +38,18 @@ def create_planning_graph():
                 "events": data.get("festival_information") or [],
                 "places": data.get("attractions") or [],
                 "food": data.get("food_options") or [],
+                "tool_calls": retrieved.get("tool_calls", []),
                 "mcp": {
                     "status": "invoked",
-                    "tools": retrieved["tools_used"],
+                    "tools": retrieved.get("tools_used", []),
+                    "trace": retrieved.get("tool_calls", []),
                 },
             }
 
-        except Exception:
-            # Preserve planning if the MCP protocol is unavailable.
-            # Local CSV functions are fallback tools, not MCP calls.
+        except Exception as exc:
+            # MCP failed: use local CSV tools, but report the failure honestly.
+            trace = getattr(exc, "trace", [])
+
             return {
                 "research": research,
                 "events": search_festival_information(
@@ -58,9 +61,16 @@ def create_planning_graph():
                 "food": search_food_options(
                     request.get("food_preferences", [])
                 ),
+                "tool_calls": trace,
                 "mcp": {
                     "status": "fallback",
-                    "tools": [],
+                    "tools": [
+                        item["tool"]
+                        for item in trace
+                        if item.get("error") is None
+                    ],
+                    "trace": trace,
+                    "reason": f"{type(exc).__name__}: {exc}",
                 },
             }
 
@@ -73,6 +83,8 @@ def create_planning_graph():
             food=state["food"],
         )
 
+        result["tool_calls"] = state.get("tool_calls", [])
+
         result["workflow"] = {
             "engine": "LangGraph",
             "nodes": [
@@ -81,6 +93,7 @@ def create_planning_graph():
                 "validate_and_finalize",
             ],
             "tools_used": state["mcp"].get("tools", []),
+            "mcp": state["mcp"],
         }
 
         return {"draft": result}
@@ -126,16 +139,51 @@ def run_planning(request: dict):
         )["final"]
 
         result["workflow"]["checkpointing"] = checkpointed
+        _print_execution_trace(result)
         return result
 
-    except Exception:
-        # Keep a clearly labelled fallback if the graph cannot run.
+    except Exception as exc:
         result = build_itinerary(request)
 
+        result["tool_calls"] = []
         result["workflow"] = {
             "engine": "deterministic fallback",
             "checkpointing": False,
+            "reason": f"{type(exc).__name__}: {exc}",
             "tools_used": [],
+            "mcp": {
+                "status": "not-confirmed",
+                "tools": [],
+                "trace": [],
+            },
         }
 
+        _print_execution_trace(result)
         return result
+
+
+def _print_execution_trace(result: dict):
+    import json
+
+    print("\nTool calls:")
+    for call in result.get("tool_calls", []):
+        print(
+            f"- {call.get('tool', 'unknown')} | "
+            f"{call.get('execution_ms', 0)} ms | "
+            f"error={call.get('error')}"
+        )
+
+    print("\nShared state snapshot:")
+    state_view = {
+        "user_input": result.get("request"),
+        "event_data": result.get("events"),
+        "activity_data": result.get("places"),
+        "food_data": result.get("food"),
+        "logistics_data": result.get("transport"),
+        "estimated_cost": result.get("estimated_cost"),
+        "conflicts": result.get("conflicts", []),
+        "itinerary": result.get("itinerary", result),
+        "replanned": result.get("replanned", False),
+        "status": result.get("status", "completed"),
+    }
+    print(json.dumps(state_view, indent=2, default=str))

@@ -10,3 +10,4 @@ class TripState(TypedDict, total=False):
     mcp: dict
     draft: dict
     final: dict
+    tool_calls: list
