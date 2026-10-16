@@ -44,10 +44,6 @@
   function itemArea(item) { return item.area || item.venue || item.location || ''; }
   function itemDescription(item) { return item.description || item.notes || item.schedule || item.evidence_status || 'Details available in the GoaFest AI dataset.'; }
   function itemCategory(item) { return item.category || item.type || item.unit || ''; }
-  function itemCost(item) {
-    const value = item.estimated_fee_inr ?? item.estimated_price_inr ?? item.estimated_cost_inr;
-    return value !== undefined && value !== '' ? `₹${Number(value).toLocaleString('en-IN')}${item.unit ? ' · '+item.unit : ''}` : '';
-  }
   function mapUrl(item) { return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([itemTitle(item), itemArea(item), 'Goa'].filter(Boolean).join(', '))}`; }
   function filteredCatalog() {
     const query = catalogSearch.trim().toLowerCase();
@@ -108,7 +104,6 @@
         <p class="catalog-description">{itemDescription(item)}</p>
         {#if item.highlights}<p class="catalog-extra"><strong>Highlights:</strong> {item.highlights}</p>{/if}
         {#if item.opening_hours}<p class="catalog-extra"><strong>Hours:</strong> {item.opening_hours}</p>{/if}
-        {#if itemCost(item)}<p class="catalog-cost">{itemCost(item)} <small>estimate / dataset value</small></p>{/if}
         <div class="catalog-actions"><a href={mapUrl(item)} target="_blank" rel="noreferrer">View on Maps ↗</a>{#if item.source_url}<a href={item.source_url} target="_blank" rel="noreferrer">Source ↗</a>{/if}{#if item.image?.source_url}<a href={item.image.source_url} target="_blank" rel="noreferrer">Photo ↗</a>{/if}<button type="button" onclick={() => useForTrip(item)}>Use for planning</button></div>
       </article>
     {/each}
