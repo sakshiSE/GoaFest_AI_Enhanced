@@ -1,4 +1,17 @@
+
 mode,unit,estimated_cost_inr,evidence_status,notes
 Local taxi,per group/day,700,estimated,Planning assumption only; not a quote
 Bus,per person/day,100,estimated,Routes and schedules must be checked
-Rental scooter,per day,500,estimated,"Excludes fuel, deposit and licence requirements"
+Rental scooter,per day,500,estimated,Excludes fuel deposit and licence requirements
+Rental motorcycle,per day,700,estimated,Excludes fuel deposit and licence requirements
+Rental car,per day,1800,estimated,Excludes fuel deposit insurance and parking
+App-based cab,per trip,300,estimated,Availability and fares depend on route and demand
+Auto-rickshaw,per trip,150,estimated,Confirm fare before travel or check applicable meter
+Motorcycle taxi,per trip,100,estimated,Confirm availability and applicable local rules
+Private airport transfer,per vehicle/trip,1000,estimated,Depends on airport destination and vehicle type
+Railway,per person/trip,200,estimated,Fare depends on route class and booking
+Intercity coach,per person/trip,300,estimated,Operator route and booking time affect fare
+Ferry,per person/trip,20,estimated,Verify route timetable and applicable charges
+Bicycle rental,per day,250,estimated,Availability varies by area and season
+Walking,per person/trip,0,estimated,For short distances; consider heat weather and accessibility
+Hotel shuttle,per person/trip,100,estimated,Only where offered; confirm with accommodation
