@@ -2,3 +2,61 @@ activity,category,duration_hours,evidence_status
 Heritage walk,culture,1.5,demo
 Beach sunset break,outdoors,1.0,demo
 Local market visit,shopping,1.0,demo
+Visit Basilica of Bom Jesus,heritage,1.5,demo
+Explore Se Cathedral,heritage,1.0,demo
+Old Goa heritage walk,culture,2.0,demo
+Explore Fontainhas Latin Quarter,heritage,1.5,demo
+Visit Fort Aguada,heritage,1.5,demo
+Explore Chapora Fort,heritage,1.5,demo
+Visit Reis Magos Fort,heritage,1.5,demo
+Visit Cabo de Rama Fort,heritage,2.0,demo
+Explore Terekhol Fort,heritage,1.5,demo
+Visit Shri Mangueshi Temple,culture,1.0,demo
+Visit Shantadurga Temple,culture,1.0,demo
+Visit Mahalasa Narayani Temple,culture,1.0,demo
+Visit Mae de Deus Church,culture,1.0,demo
+Explore traditional Goan village,culture,2.0,demo
+Attend a local cultural performance,culture,2.0,demo
+Discover Goan Portuguese architecture,culture,1.5,demo
+Visit a local art gallery,culture,1.0,demo
+Relax at Baga Beach,outdoors,2.0,demo
+Relax at Calangute Beach,outdoors,2.0,demo
+Explore Candolim Beach,outdoors,2.0,demo
+Visit Anjuna Beach,outdoors,2.0,demo
+Relax at Vagator Beach,outdoors,2.0,demo
+Explore Ashwem Beach,outdoors,2.0,demo
+Visit Arambol Beach,outdoors,2.0,demo
+Explore Palolem Beach,outdoors,2.0,demo
+Visit Agonda Beach,outdoors,2.0,demo
+Relax at Colva Beach,outdoors,2.0,demo
+Explore Butterfly Beach viewpoint,outdoors,2.5,demo
+Watch sunset at Dona Paula,outdoors,1.0,demo
+Birdwatch at Dr Salim Ali Bird Sanctuary,nature,2.0,demo
+Explore Bhagwan Mahavir Wildlife Sanctuary,nature,3.0,demo
+Visit Dudhsagar Falls viewpoint,nature,4.0,demo
+Walk through Netravali Wildlife Sanctuary,nature,3.0,demo
+Explore Cotigao Wildlife Sanctuary,nature,3.0,demo
+Visit a spice plantation,nature,2.0,demo
+Enjoy a guided nature walk,nature,2.0,demo
+Kayaking in Goa backwaters,adventure,2.0,demo
+Try a guided river cruise,water,1.5,demo
+Go on a dolphin-watching trip,water,2.0,demo
+Try snorkelling with a licensed operator,adventure,2.0,demo
+Try scuba diving with a certified operator,adventure,3.0,demo
+Take a surfing lesson with an instructor,adventure,2.0,demo
+Try parasailing with a licensed operator,adventure,1.0,demo
+Take a cycling tour,culture,2.0,demo
+Take a boat trip on the Mandovi River,water,1.5,demo
+Try a Goan thali,food,1.0,demo
+Taste Goan bebinca,food,0.5,demo
+Explore Goan seafood cuisine,food,1.5,demo
+Join a Goan cooking workshop,food,2.5,demo
+Visit Mapusa Friday Market,shopping,1.5,demo
+Explore Anjuna Flea Market,shopping,2.0,demo
+Browse Panaji market stalls,shopping,1.0,demo
+Shop for local handicrafts,shopping,1.0,demo
+Enjoy live music at a local venue,nightlife,2.0,demo
+Explore Goa nightlife venues,nightlife,2.0,demo
+Attend a Goa festival or fair,event,2.5,demo
+Visit a family-friendly water park,family,3.0,demo
+Enjoy a beach picnic,outdoors,1.5,demo
