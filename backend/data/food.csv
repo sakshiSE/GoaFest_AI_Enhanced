@@ -1,5 +1,51 @@
 dish,type,area,description,estimated_price_inr,source_url,evidence_status
-Goan fish curry rice,Goan food,Panaji,A classic local meal; confirm dietary needs and restaurant availability.,250,https://goa-tourism.com/,estimated / demo dataset
-Vegetarian xacuti or seasonal thali,Goan food vegetarian,Panaji,Ask the restaurant about ingredients and preparation.,220,https://goa-tourism.com/,estimated / demo dataset
-Poi with local snacks,Goan food,Mapusa,Local bread and snack pairing; availability varies by shop.,120,https://goa-tourism.com/,estimated / demo dataset
-Bebinca,dessert Goan food,Panaji,Traditional layered Goan dessert.,100,https://goa-tourism.com/,estimated / demo dataset
+Goan fish curry rice,Goan seafood,Panaji,A classic Goan meal with fish curry and rice; fish varies by availability.,250,https://goa-tourism.com/,estimated / demo dataset
+Vegetarian xacuti or seasonal thali,Goan vegetarian,Panaji,Ask the restaurant about ingredients and preparation.,220,https://goa-tourism.com/,estimated / demo dataset
+Poi with local snacks,Goan bread and snacks,Mapusa,Traditional Goan bread served with local snacks; availability varies.,120,https://goa-tourism.com/,estimated / demo dataset
+Bebinca,Goan dessert,Panaji,Traditional layered Goan dessert.,100,https://goa-tourism.com/,estimated / demo dataset
+Pork vindaloo,Goan meat dish,Panaji,Spicy and tangy pork curry influenced by Portuguese cuisine.,300,https://goa-tourism.com/,estimated / demo dataset
+Chicken cafreal,Goan meat dish,Calangute,Chicken marinated with green herbs and spices.,280,https://goa-tourism.com/,estimated / demo dataset
+Prawn balchao,Goan seafood,Mapusa,Spicy and tangy prawn preparation often served with rice.,300,https://goa-tourism.com/,estimated / demo dataset
+Prawn curry rice,Goan seafood,Panaji,Coconut-based prawn curry served with rice.,300,https://goa-tourism.com/,estimated / demo dataset
+Rawa fried fish,Goan seafood,Calangute,Fish coated in semolina and shallow-fried.,220,https://goa-tourism.com/,estimated / demo dataset
+Recheado fish,Goan seafood,Anjuna,Fish prepared with a spicy and tangy recheado masala.,300,https://goa-tourism.com/,estimated / demo dataset
+Fish recheado poi,Goan bread and seafood,Mapusa,Goan bread filled with spicy recheado fish.,180,https://goa-tourism.com/,estimated / demo dataset
+Crab xec xec,Goan seafood,Panaji,Crab cooked in a rich coconut-based roasted spice gravy.,450,https://goa-tourism.com/,estimated / demo dataset
+Goan squid fry,Goan seafood,Vasco da Gama,Squid seasoned with local spices and fried.,280,https://goa-tourism.com/,estimated / demo dataset
+Mussels rava fry,Goan seafood,Calangute,Mussels coated with semolina and fried.,250,https://goa-tourism.com/,estimated / demo dataset
+Goan prawn pulao,Goan seafood rice dish,Panaji,Fragrant rice prepared with prawns and spices.,280,https://goa-tourism.com/,estimated / demo dataset
+Chicken xacuti,Goan meat dish,Mapusa,Chicken cooked in a complex roasted coconut and spice gravy.,280,https://goa-tourism.com/,estimated / demo dataset
+Pork sorpotel,Goan meat dish,Salcete,Traditional spiced pork preparation commonly served during celebrations.,300,https://goa-tourism.com/,estimated / demo dataset
+Choris pao,Goan sausage bread,Mapusa,Goan spiced sausage served in local bread.,120,https://goa-tourism.com/,estimated / demo dataset
+Goan beef roast,Goan meat dish,Margao,Seasoned beef roast served at selected local eateries.,300,https://goa-tourism.com/,estimated / demo dataset
+Goan pork assado,Goan meat dish,Salcete,Roasted pork prepared in a Goan home-style tradition.,320,https://goa-tourism.com/,estimated / demo dataset
+Mushroom xacuti,Goan vegetarian,Panaji,Mushrooms cooked in a coconut and roasted spice gravy.,220,https://goa-tourism.com/,estimated / demo dataset
+Goan vegetable curry rice,Goan vegetarian,Mapusa,Seasonal vegetables cooked in a local curry and served with rice.,180,https://goa-tourism.com/,estimated / demo dataset
+Alsande tonak,Goan vegetarian,Panaji,Cowpeas cooked in a spiced coconut gravy.,180,https://goa-tourism.com/,estimated / demo dataset
+Khatkhate,Goan vegetarian,South Goa,Mixed vegetables cooked in a traditional spiced coconut gravy.,200,https://goa-tourism.com/,estimated / demo dataset
+Goan mushroom bhaji,Goan vegetarian,Margao,Mushrooms prepared with local spices and served as a meal accompaniment.,180,https://goa-tourism.com/,estimated / demo dataset
+Ros omelette,Goan street food,Mapusa,Omelette served with a spicy gravy and bread.,100,https://goa-tourism.com/,estimated / demo dataset
+Goan samosa,Goan snack,Panaji,A savoury snack available at local bakeries and snack stalls.,25,https://goa-tourism.com/,estimated / demo dataset
+Patoleo,Goan traditional sweet,Across Goa,Rice and coconut filling steamed in turmeric leaves; availability is seasonal.,60,https://goa-tourism.com/,estimated / demo dataset
+Dodol,Goan traditional sweet,South Goa,A sticky traditional sweet made with ingredients such as coconut milk and jaggery.,80,https://goa-tourism.com/,estimated / demo dataset
+Alle Belle,Goan dessert,Salcete,Thin pancakes filled with coconut and jaggery.,80,https://goa-tourism.com/,estimated / demo dataset
+Doce de grao,Goan traditional sweet,Panaji,Traditional sweet made with gram and coconut.,80,https://goa-tourism.com/,estimated / demo dataset
+Perad,Goan traditional sweet,Mapusa,Guava cheese confection traditionally made with guava pulp and sugar.,60,https://goa-tourism.com/,estimated / demo dataset
+Kul-kul,Goan festive sweet,Across Goa,Crisp curled sweet traditionally prepared during Christmas.,100,https://goa-tourism.com/,estimated / demo dataset
+Neureos,Goan festive sweet,Across Goa,Fried pastry pockets filled with a sweet coconut mixture.,100,https://goa-tourism.com/,estimated / demo dataset
+Bolinhas,Goan bakery sweet,Panaji,Traditional coconut and semolina cookies.,50,https://goa-tourism.com/,estimated / demo dataset
+Goan coconut cake,Goan bakery sweet,Mapusa,Coconut-based cake available at selected bakeries.,70,https://goa-tourism.com/,estimated / demo dataset
+Baath cake,Goan bakery sweet,Salcete,Traditional coconut and semolina cake.,70,https://goa-tourism.com/,estimated / demo dataset
+Goan pao,Goan bread,Mapusa,Soft local bread commonly eaten with curries and snacks.,10,https://goa-tourism.com/,estimated / demo dataset
+Kankonn,Goan bread and snack,South Goa,Traditional crunchy bread snack; availability varies by bakery.,30,https://goa-tourism.com/,estimated / demo dataset
+Sanna,Goan steamed bread,Salcete,Soft steamed rice bread served with curries and festive dishes.,60,https://goa-tourism.com/,estimated / demo dataset
+Goan poi bread sandwich,Goan bread and snack,Panaji,Local poi bread filled with vegetables or other available fillings.,100,https://goa-tourism.com/,estimated / demo dataset
+Bhaji pao,Goan street food,Mapusa,Bread served with a spiced vegetable curry.,70,https://goa-tourism.com/,estimated / demo dataset
+Chana ros,Goan vegetarian street food,Margao,Chickpeas served in a spiced gravy with bread or other accompaniments.,80,https://goa-tourism.com/,estimated / demo dataset
+Goan fish thali,Goan seafood meal,Margao,Traditional rice meal with fish curry and seasonal accompaniments.,280,https://goa-tourism.com/,estimated / demo dataset
+Goan vegetarian thali,Goan vegetarian meal,Ponda,Vegetarian meal with rice curry vegetables and seasonal sides.,180,https://goa-tourism.com/,estimated / demo dataset
+Sol kadhi,Goan drink and accompaniment,Panaji,Coconut milk and kokum drink often served with Goan meals.,50,https://goa-tourism.com/,estimated / demo dataset
+Kokum sherbet,Goan beverage,Mapusa,Refreshing kokum-based drink served chilled.,40,https://goa-tourism.com/,estimated / demo dataset
+Tender coconut water,Local beverage,Palolem,Tender coconut served as a refreshing drink.,50,https://goa-tourism.com/,estimated / demo dataset
+Fresh sugarcane juice,Local beverage,Mapusa,Freshly pressed sugarcane juice from a local stall.,40,https://goa-tourism.com/,estimated / demo dataset
+Seasonal fruit plate,Local food,Panaji,Fresh seasonal fruit sold at local markets or food stalls.,80,https://goa-tourism.com/,estimated / demo dataset
