@@ -1,4 +1,31 @@
 festival,event,venue,schedule,source_url,evidence_status,notes
-Goa Carnival,Carnival parade (sample record),Panaji - verify venue,Unverified - check official schedule,https://goa-tourism.com/,unverified,Static demonstration record; not a current event listing
-Sunburn Goa,Electronic music festival (sample record),Venue varies by edition,Unverified - check organiser,https://sunburn.in/,unverified,Static demonstration record; dates vary annually
-Shigmo Festival,Traditional spring festival (sample record),Multiple locations,Unverified - check local notices,https://goa-tourism.com/,unverified,Static demonstration record; not a current schedule
+Goa Carnival,Carnival parade,Panaji and other Goa towns,Usually February or March,https://goa-tourism.com/news/carnival/,unverified,Recurring festival; confirm current year dates and parade route
+Sunburn Goa,Electronic music festival,Venue varies by edition,Dates announced by organiser,https://sunburn.in/,unverified,Goa edition and venue must be confirmed for the relevant year
+Shigmo Festival,Traditional spring festival and float parade,Panaji and other Goa towns,Usually February to April,https://goa-tourism.com/news/shigmo-festival/,unverified,Dates and parade locations vary by year
+São João,Monsoon festival and village celebrations,Siolim and other Goa villages,24 June annually,https://goa-tourism.com/festival/sao-joao/,unverified,Local programmes and safety arrangements vary
+Bonderam Festival,Flag parade floats and cultural performances,Divar Island,Usually August,https://goa-tourism.com/festival/bonderam/,unverified,Main celebration is generally in the latter part of August; confirm date
+Feast of St Francis Xavier,Religious feast,Old Goa,3 December annually,https://www.utsav.gov.in/view-event/feast-of-st-francis-xavier-1,unverified,Confirm current religious programme and visitor arrangements
+International Film Festival of India,International film screenings and events,Panaji and designated venues,Usually November,https://goa-tourism.com/,unverified,Check official IFFI announcements for dates and venues
+Serendipity Arts Festival,Multidisciplinary arts festival,Panaji and announced venues,Usually December,https://goa-tourism.com/,unverified,Check current edition dates and venue information
+Tripurari Poornima,Traditional cultural festival and boat-related celebrations,Sankhali,Usually November,https://goa-tourism.com/,unverified,Confirm annual date and programme with Goa Tourism
+Vasco Saptah,Religious and community festival,Vasco da Gama,Usually August,https://goa-tourism.com/,unverified,Dates and local arrangements require confirmation
+Chikalkalo Festival,Traditional monsoon mud festival,Marcel,Usually July,https://goa-tourism.com/,unverified,Confirm annual schedule and participation guidance
+Ganesh Chaturthi,Religious festival and household celebrations,Across Goa,Usually August or September; lunar calendar,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Dates follow the Hindu calendar; public programmes vary
+Christmas Celebrations,Church services and seasonal celebrations,Across Goa,24–25 December annually,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Individual church services and public events have separate schedules
+Feast of the Three Kings,Religious feast and procession,Three Kings Chapel area in Cansaulim,Usually 6 January,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Confirm local service and procession arrangements
+Diwali in Goa,Festival of lights and local celebrations,Across Goa,Usually October or November; lunar calendar,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Dates vary by year
+Good Friday,Christian religious observances,Churches across Goa,Date varies annually,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Check local church service schedules
+Food and Cultural Festival,Goan food stalls and cultural programme,Venue varies by edition,Dates announced by organisers,https://goa-tourism.com/,unverified,Confirm event edition dates and location
+Heritage Festival,Heritage and cultural activities,Venue varies by edition,Dates announced by organisers,https://goa-tourism.com/,unverified,Confirm current edition schedule
+Spirit of Goa Festival,Goan food drink and cultural showcases,Venue varies by edition,Dates announced by organisers,https://goa-tourism.com/,unverified,Confirm current dates and venue
+Shiv Jayanti,Commemorative cultural processions and programmes,Locations vary across Goa,Usually February; confirm annual programme,https://goa-tourism.com/,unverified,Dates and local events require confirmation
+Lokotsav,Folk arts crafts and cultural fair,Panaji,Dates announced by organisers,https://www.goa.gov.in/know-goa/events/,unverified,Check the latest government or organiser announcement
+Chorotsav,Traditional village cultural festival,Location and venue to be confirmed,Usually around March; verify locally,https://goa-tourism.com/,unverified,Confirm exact village date and programme
+Ghode Modni,Traditional folk dance and cultural performance,Various Goa communities and festival venues,Often during Shigmo season,https://goa-tourism.com/,unverified,Performance dates depend on local festival programmes
+Divzam,Traditional religious and cultural celebration,Local venue to be confirmed,Dates vary by village,https://goa-tourism.com/,unverified,Confirm local event details before publishing
+Touxeachem Fest,Religious feast and traditional cucumber offering,Church of St Anne at Talaulim,Usually July 26; verify annually,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Confirm the current church programme and local arrangements
+Feast of St Anne,Religious feast,St Anne Church at Talaulim,Usually July; feast day commonly 26 July,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Confirm current schedule with the parish
+Feast of Our Lady of the Immaculate Conception,Religious feast and local celebrations,Our Lady of the Immaculate Conception Church Panaji,8 December annually,https://dip.goa.gov.in/fair-festivals-of-goa/,unverified,Confirm service times and any associated public events
+International Jazz Music Festival,Live jazz performances,Venue varies by edition,Dates announced by organisers,https://goa-tourism.com/,unverified,Verify event name dates and venue for the specific edition
+Vintage Car and Bike Festival,Classic vehicle exhibition,Panaji or announced venue,Often around October; verify current edition,https://goa-tourism.com/,unverified,Confirm whether the event is scheduled in the selected year
+Deepostav Festival,Traditional lights and cultural celebrations,Venue to be confirmed,Usually around October or November; verify locally,https://goa-tourism.com/,unverified,Confirm date venue and current programme
